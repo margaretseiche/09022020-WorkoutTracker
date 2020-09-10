@@ -17,7 +17,7 @@
 Created a Workout App to keep track of daily exercise 
 
 ## Installation
-npm i
+npm i, 
 npm run seed
 
 ## Usage
