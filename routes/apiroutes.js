@@ -2,11 +2,12 @@ const path = require("path");
 const router = require("express").Router();
 
 const model = require("../models");
+const Workout = require("../models/Model");
 
 // module.exports = function (router) {
 
     router.get("/api/workouts", (req, res) => {
-        model.Workout.find({})
+        Workout.find({})
             .then(dbWorkout => {
                 res.json(dbWorkout)
             })
@@ -16,7 +17,7 @@ const model = require("../models");
     })
 
     router.get("/api/workouts/range", (req, res) => {
-        model.Workout.find({}).limit(7)
+        Workout.find({}).limit(7)
             .then(dbWorkout => {
                 res.json(dbWorkout)
             })
@@ -30,7 +31,7 @@ const model = require("../models");
     router.post("/api/workouts", (req, res) => {
         console.log(req.body);
 
-        model.Workout.insertOne(req.body, (error, data) => {
+        Workout.create(req.body, (error, data) => {
             if (error) {
                 res.json(error);
             } else {
@@ -40,11 +41,9 @@ const model = require("../models");
     });
 
     router.put("/api/workouts/:id", (req, res) => {
-        model.Workout.update(
-            {
-                _id: mongojs.ObjectID(req.params.id)
-            },
-            (error, data) => {
+        Workout.findOneAndUpdate(
+            {_id: req.params.id}, {$push: {exercises: req.body}})
+            .then((error, data) => {
                 if (error) {
                     res.json(error);
                 } else {
