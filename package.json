@@ -1,12 +1,18 @@
 {
   "name": "09022020-workouttracker",
   "version": "1.0.0",
-  "description": "workout",
+  "description": "Workout Tracker",
   "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "seed": "node seeders/seed.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +23,5 @@
   "bugs": {
     "url": "https://github.com/margaretseiche/09022020-WorkoutTracker/issues"
   },
-  "homepage": "https://github.com/margaretseiche/09022020-WorkoutTracker#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.10.2",
-    "morgan": "^1.10.0"
-  }
+  "homepage": "https://github.com/margaretseiche/09022020-WorkoutTracker#readme"
 }
