@@ -5,6 +5,9 @@
 ![](https://img.shields.io/badge/License-MIT-red)
 
 * Deployed at https://immense-ridge-32351.herokuapp.com/
+
+![tes](fitness.JPG)   
+
 * Click 'New Workout' to add a new workout today, which can include several exercises; click 'Add Exercise' if you are continuing the workout after this one or 'Complete' if this is the last one.  If later in the day you want to add another exercise to the same workout, click 'Continue Workout' from the homepage (rather than 'New Workout').  To see the last seven days of workouts, click the top left 'Dashboard'.  'Fitness Tracker' on the top left will take you back to the homepage.   
 
 ## Table of Contents
