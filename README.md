@@ -8,6 +8,8 @@
 
 ![tes](fitness.JPG)   
 
+* Click 'New Workout' to add a new workout today, which can include several exercises; click 'Add Exercise' if you are continuing the workout after this one or 'Complete' if this is the last one.  If later in the day you want to add another exercise to the same workout, click 'Continue Workout' from the homepage (rather than 'New Workout').  To see the last seven days of workouts, click the top left 'Dashboard'.  'Fitness Tracker' on the top left will take you back to the homepage.  
+
 # Table of Contents
 * [Description](#Description)
 * [Technologies](#Technologies)
@@ -29,9 +31,7 @@ npm i,
 npm run seed
 
 ## Usage
-node server.js
-
-* Click 'New Workout' to add a new workout today, which can include several exercises; click 'Add Exercise' if you are continuing the workout after this one or 'Complete' if this is the last one.  If later in the day you want to add another exercise to the same workout, click 'Continue Workout' from the homepage (rather than 'New Workout').  To see the last seven days of workouts, click the top left 'Dashboard'.  'Fitness Tracker' on the top left will take you back to the homepage.   
+node server.js 
 
 ## Contributors
 Margaret Seiche
