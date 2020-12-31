@@ -20,11 +20,11 @@
 * [Github](#Github)
 * [Email](#Email)
 
-## Technologies
-Express server, Mongoose database, Morgan for logging, Heroku for deployment
-
 ## Description
 Created a Workout App to keep track of daily exercise 
+
+## Technologies
+Express server, Mongoose database, Morgan for logging, Heroku for deployment
 
 ## Installation
 npm i, 
